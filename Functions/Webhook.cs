@@ -62,7 +62,7 @@ namespace Functions
 
             //　以下3行のコメントアウトをはずす
             var sendMessage = firstEvent.Message.Text;
-            var replyText = sendMessage == "今日の天気は？" ? "晴れです。" : sendMessage;
+            var replyText = sendMessage == "今日の天気は？" ? "雨です。" : sendMessage;
             await Reply(firstEvent.ReplyToken, replyText);
             
             return new OkResult();
